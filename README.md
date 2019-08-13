@@ -1,2 +1,2 @@
-# foo-fonts
-fonts used for testing and debugging
+# Foo Fonts
+Fonts used for testing and debugging.

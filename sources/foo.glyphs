@@ -1,7 +1,9 @@
 {
 .appVersion = "1254";
 DisplayStrings = (
-D
+D,
+" ",
+"."
 );
 customParameters = (
 {
@@ -19,7 +21,7 @@ Tag = wdth;
 },
 {
 name = "Variation Font Origin";
-value = "9E4B8FD8-F8AF-4AA7-8E0D-0C907FFB2BDD";
+value = "87891793-5064-437C-95A6-53B0F7C9CDD2";
 }
 );
 date = "2019-08-12 17:33:23 +0000";
@@ -31,7 +33,8 @@ capHeight = 700;
 descender = -200;
 id = "29897A1E-E6C9-4227-925D-F8A4C3FD2D18";
 weight = Light;
-widthValue = 700;
+weightValue = 300;
+widthValue = 500;
 xHeight = 500;
 },
 {
@@ -41,7 +44,9 @@ descender = -200;
 iconName = Condensed;
 id = "9677FB6C-1713-48C4-A0D5-CAD089012881";
 weight = Light;
+weightValue = 300;
 width = Condensed;
+widthValue = 300;
 xHeight = 500;
 },
 {
@@ -50,7 +55,7 @@ capHeight = 700;
 descender = -200;
 id = "87891793-5064-437C-95A6-53B0F7C9CDD2";
 weightValue = 400;
-widthValue = 700;
+widthValue = 500;
 xHeight = 500;
 },
 {
@@ -69,7 +74,7 @@ descender = -200;
 id = "0DBFF09D-D042-4B37-9AF6-7CFC44284FBA";
 weight = Bold;
 weightValue = 700;
-widthValue = 700;
+widthValue = 500;
 xHeight = 500;
 },
 {

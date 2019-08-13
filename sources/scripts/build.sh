@@ -1,27 +1,23 @@
 #!/bin/bash
 set -e
 
-echo "\n[INFO] Starting build script"
+echo "[INFO] Starting build script"
 echo "[INFO] Generating variable fonts"
-echo "[INFO]   Making 'fonts/variable' directory if it doesn't already exist"
-mkdir -p fonts/variable
 
-glyphsSource="Sofia_Sans_MM.glyphs Sofia_Sans_Italic_MM.glyphs"
+glyphsSource="foo.glyphs"
 outputDir="fonts/variable"
 
+echo "[INFO] Making 'fonts/variable' directory if it doesn't already exist"
+mkdir -p $outputDir
+
 for i in $glyphsSource; do
-    echo "[TEST]   Queued source file: $i"
+    echo "[TEST] Queued source file: $i"
 done
 
-echo "[INFO]   Building Sofia Sans with Fontmake"
-fontmake -g sources/Sofia_Sans_VF.glyphs -o variable \
-    --output-path $outputDir/SofiaSansVF.ttf \
+echo "[INFO] Building Foo Fonts with Fontmake"
+fontmake -g sources/foo.glyphs -o variable \
+    --output-path $outputDir/Foo-vf.ttf \
     --verbose ERROR
 
-#echo "[INFO]   Building Sofia Sans Italic with Fontmake"
-#fontmake -g Sofia_Sans_Italic_ММ.glyphs -o variable \
-#    --output-path $outputDir/SofiaSansItalicVF.ttf \
-#    --verbose ERROR
-
 echo "[INFO] Removing build directories"
-rm -rf master_ufo/ instance_ufo/
+rm -rf master_ufo/ instance_ufo/ variable_ttf/
